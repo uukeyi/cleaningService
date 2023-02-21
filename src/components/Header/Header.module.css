@@ -1,0 +1,155 @@
+.header {
+   width: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 1;
+}
+.headerContainer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 9px 0px;
+   border-bottom: 1px solid black;
+}
+.headerMenuNav {
+   display: flex;
+   gap: 100px;
+}
+.headerScheduleContainer,
+.headerTelContainer {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+.headerTelContainer {
+   gap: 10px;
+}
+.headerTelContainer > a {
+   font-weight: 500;
+   font-size: 19px;
+}
+.headerScheduleContainer > div {
+   width: 13px;
+   height: 13px;
+   border-radius: 100%;
+   background: #36b6be;
+}
+.headerScheduleContainer > p {
+   font-size: 13px;
+   font-weight: 500;
+}
+.headerBtnPrice {
+   width: 220px;
+   margin-left: 50px;
+   padding: 16px;
+   border-radius: 40px;
+   font-weight: 700;
+   font-size: 14px;
+   border: 2px solid #36b6be;
+}
+.menuNavigation {
+   display: flex;
+   margin-top: 25px;
+   gap: 115px;
+   justify-content: center;
+   align-items: center;
+}
+.menuNavigation  > a {
+    font-weight: 500;
+}
+@media screen and (max-width: 1200px) {
+   .headerMenuNav {
+      gap: 50px;
+   }
+   .headerTelContainer > a > img {
+      width: 30px;
+      height: 30px;
+   }
+   .headerBtnPrice {
+      width: 200px;
+   }
+}
+@media screen and (max-width: 962px) {
+   .headerMenuNav {
+      gap: 50px;
+   }
+   .headerTelContainer > a > img {
+      width: 30px;
+      height: 30px;
+   }
+   .headerBtnPrice {
+      align-self: flex-end;
+      padding: 13px;
+      width: 170px;
+      margin-left: 30px;
+   }
+   .headerMenuNav {
+      flex-direction: column-reverse;
+      gap: 0px;
+   }
+   .headerScheduleContainer > div {
+      width: 10px;
+      height: 10px;
+   }
+   .headerScheduleContainer {
+      margin: -7px 0px 0px 65px;
+      gap: 10px;
+   }
+
+   .headerTelContainer > a {
+      font-size: 16px;
+   }
+   .menuNavigation {
+
+    gap: 130px;
+   }
+   .menuNavigation  > a {
+    font-size: 16px;
+   }
+}
+@media screen and (max-width: 642px) {
+   .headerBtnPrice {
+      display: none;
+   }
+   .headerMenuNav {
+      gap: 5px;
+   }
+   .headerContainer {
+      padding: 9px 10px;
+   }
+   .headerTelContainer > a > img {
+      width: 30px;
+      height: 30px;
+   }
+   .menuNavigation {
+
+    gap: 70px;
+   }
+   .menuNavigation  > a {
+    font-size: 13px;
+   }
+}
+@media screen and (max-width: 482px) {
+   .headerTelContainer > a > img {
+      width: 23px;
+      height: 23px;
+   }
+   .headerTelContainer > a {
+      font-size: 13px;
+   }
+   .headerContainer {
+      padding: 9px 7px;
+   }
+   .headerScheduleContainer {
+      justify-content: end;
+      margin: 0px 0 0 0px;
+   }
+   .menuNavigation {
+
+    gap: 50px;
+   }
+   .menuNavigation  > a {
+    font-size: 12px;
+   }
+}

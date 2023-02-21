@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+}
+.container > div {
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+}
+.container > div:not(:last-child){
+    border-right: 2px solid grey;
+}
+.serviceDesc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.serviceSubTitle {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+.serviceDesc  > p:not(:last-child) {
+    font-size: 17px;
+    font-weight: 600;
+}
+.priceTitle {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 962px) {
+    .container {
+        align-items: center;
+    }
+    .container > div {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    .container > div:not(:last-child){
+        border-right: none;
+        border-bottom: 2px solid grey;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+}
+

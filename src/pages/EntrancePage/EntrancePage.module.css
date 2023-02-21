@@ -1,0 +1,75 @@
+.mainContainer {
+   padding: 156px 0px 60px 0px;
+}
+.mainCard {
+   width: 49%;
+   padding: 20px;
+   box-shadow: 0 0 10px 1px rgb(240 239 239);
+   cursor: default;
+   pointer-events: none;
+}
+.mainCard > img {
+   width: 100px;
+   height: 100px;
+}
+.mainCard > p {
+   max-width: 70%;
+   font-size: 19px;
+   font-weight: 700;
+}
+.mainTitle {
+   margin-top: 70px;
+   font-weight: 300;
+   font-size: 35px;
+}
+.mainTitle > strong {
+   font-weight: 700;
+}
+.mainSubtitle {
+   margin-top: 30px;
+   font-size: 20px;
+   color: rgba(0, 0, 0, 0.767);
+}
+
+@media screen and (max-width: 1200px) {
+   .mainCard {
+      width: 48%;
+   }
+}
+@media screen and (max-width: 962px) {
+   .mainCard {
+      width: 100%;
+   }
+}
+@media screen and (max-width: 642px) {
+    .bgWomen {
+        display: none;
+    }
+     }
+@media screen and (max-width: 480px) {
+   .fullWidthContainer {
+      width: 90%;
+   }
+   .mainList {
+      justify-content: center;
+      align-items: center;
+   }
+   .mainCard > p {
+      max-width: 70%;
+      font-size: 16px;
+   }
+   .mainCard {
+      width: 90%;
+      padding: 0px;
+      padding-right: 20px;
+   }
+   .mainCard > img {
+      margin-left: -30px;
+   }
+   .mainContainer {
+      padding: 70px 0px 60px 0px;
+   }
+   .mainTitle {
+      font-size: 30px;
+   }
+}

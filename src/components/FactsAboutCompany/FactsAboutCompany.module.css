@@ -1,0 +1,92 @@
+.container {
+   position: relative;
+   padding: 200px 0px;
+}
+.titleContainer {
+   display: flex;
+
+   gap: 30px;
+   align-items: center;
+}
+.titleContainer > p:first-child {
+   font-size: 150px !important;
+   font-weight: 800;
+   color: #36b6be;
+}
+.titleContainer > p:last-child {
+   font-size: 30px;
+}
+.titleContainer > p:last-child > span:last-child {
+   font-weight: 300;
+}
+.titleContainer > p:last-child > span:first-child {
+   font-weight: 700;
+}
+.cardContainer {
+   justify-content: flex-start;
+   display: flex;
+   gap: 15px;
+   flex-wrap: wrap;
+}
+.cardContainer > div {
+   display: flex;
+   padding: 25px;
+   flex-direction: column;
+   gap: 10px;
+   width: 226px;
+   height: 118px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px 1px rgb(240, 239, 239);
+}
+.cardContainer > div > p {
+   font-size: 14px;
+   color: #000000;
+}
+.cardContainer > div > p:first-child {
+   font-weight: 600;
+}
+.cardContainer > div > p:last-child {
+   opacity: 0.8;
+}
+.bg {
+   position: absolute;
+   z-index: -1;
+   pointer-events: none;
+}
+
+@media screen and (max-width: 1360px) {
+   .cardContainer {
+      justify-content: center;
+   }
+}
+@media screen and (max-width: 1200px) {
+   .container {
+      padding: 100px 0;
+   }
+   .cardContainer {
+      gap: 8px;
+   } 
+}
+@media screen and (max-width: 962px) {
+     .cardContainer {
+        justify-content: center;
+     } 
+}
+@media screen and (max-width: 642px) {
+    .cardContainer {
+        gap: 15px;
+        justify-content: flex-start;
+     } 
+     .cardContainer > div {
+        width: 215px;
+     }
+}
+@media screen and (max-width: 480px) {
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardContainer > div  {
+        width: 100%;
+    }
+}

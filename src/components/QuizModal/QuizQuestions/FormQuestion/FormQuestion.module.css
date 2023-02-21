@@ -1,0 +1,75 @@
+.mainContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 40px;
+   justify-content: center;
+}
+.mainTitle {
+   text-align: center;
+   font-size: 28px;
+   font-weight: 300;
+}
+.mainSubtitle {
+   margin-top: 30px;
+   text-align: center;
+   font-size: 16px;
+   font-weight: 300;
+}
+.mainForm {
+   margin-top: 30px;
+   padding: 50px;
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   align-items: center;
+   box-shadow: 0 9px 40px 0 #c7f7ff;
+}
+.mainForm > button {
+   width: 40%;
+   border-radius: 30px;
+   padding: 20px;
+   color: #fff;
+   background: #0ac2b7;
+}
+.labelName::before {
+   content: "";
+   display: none;
+}
+.inputName,
+.inputTel {
+   width: 80%;
+   box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+   background: #fff;
+   padding: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+   .mainForm {
+      padding: 30px;
+   }
+
+}
+@media screen and (max-width: 962px) {
+   .mainForm {
+      width: 100%;
+   }
+   .inputName,
+   .inputTel {
+      width: 100%;
+   }
+}
+@media screen and (max-width: 642px) {
+   .mainForm > button {
+      width: 60%;
+   }
+   .mainContainer {
+    padding: 25px;
+   }
+}
+@media screen and (max-width: 480px) {
+   .mainForm {
+      padding: 30px 25px;
+   }
+}

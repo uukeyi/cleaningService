@@ -1,0 +1,170 @@
+.mainContainer {
+   padding : 40px 0px;
+}
+.textContainer {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   max-width: 51%;
+}
+.contentContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.mainTitle {
+   font-weight: 700;
+   font-size: 45px;
+}
+.mainTitle > span {
+   font-weight: 700;
+   color: rgb(26, 163, 197);
+}
+.mainSubtitle {
+   font-size: 17px;
+}
+.mainList {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   margin-top: 10px;
+}
+.mainListItem {
+   display: flex;
+   gap: 5px;
+   align-items: center;
+}
+.mainListItem > span {
+   height: 2px;
+   background: black;
+   width: 9px;
+}
+.mainFooterTitle {
+   font-size: 18px;
+   font-weight: 700;
+}
+.mainBlueBtn {
+   margin-top: 40px;
+   position: relative;
+   color: #fff;
+   width: 350px;
+   padding: 30px;
+   font-size: 20px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   border-radius: 35px;
+   background: #4dc5d7;
+}
+
+.mainBlueBtn > img {
+   position: absolute;
+   pointer-events: none;
+   right: -40px;
+   top: -10px;
+}
+.mainBg {
+   max-width: 50%;
+   object-fit: cover;
+   height: 800px;
+   position: relative;
+   top: 60px;
+}
+.hiddenBg {
+   display: none;
+}
+
+@media screen and (max-width: 962px) {
+   .mainContainer {
+      padding: 100px 0px;
+   }
+   .contentContainer {
+      position: relative;
+   }
+   .textContainer {
+      max-width: none;
+   }
+   .mainFooterTitle {
+      max-width: 70%;
+   }
+   .mainBg {
+      position: absolute;
+      height: 542px;
+      top: 100px;
+      right: 0;
+   }
+   .mainBlueBtn {
+      width: 300px;
+   }
+   .mainBlueBtn > img {
+      width: 100px;
+      height: 80px;
+   }
+}
+@media screen and (max-width: 642px) {
+   .mainTitle {
+      font-size: 30px;
+   }
+   .mainListItem {
+      max-width: 45%;
+   }
+   .mainFooterTitle {
+      max-width: 45%;
+      font-size: 16px;
+   }
+   .mainBg {
+      max-width: none;
+      width: 330px;
+      height: 330px;
+      right: 0px;
+      top: 140px;
+      z-index: -1;
+   }
+   .mainBlueBtn {
+      margin-top: 0px;
+   }
+   .mainBlueBtn > img {
+      left: -50px;
+   }
+   .btnContainer {
+      display: flex;
+      justify-content: flex-end;
+   }
+}
+@media screen and (max-width: 480px) {
+   .mainListItem {
+      max-width: none;
+      font-size: 15px;
+   }
+
+   .mainSubtitle {
+      font-size: 16px;
+   }
+
+   .mainFooterTitle {
+      max-width: none;
+      font-size: 15px;
+   }
+   .mainBg {
+      display: none;
+   }
+   .btnContainer {
+      flex-direction: column;
+   }
+   .hiddenBg {
+      display: block;
+      width: 250px;
+      height: 260px;
+      position: relative;
+      pointer-events: none;
+      top: 6px;
+   }
+   .mainBlueBtn > img  {
+    width: 90px;
+    height: 70px;
+    top: 5px;
+    left: -45px;
+   }
+   .contentContainer {
+      flex-direction: column;
+   }
+}

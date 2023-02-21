@@ -1,0 +1,65 @@
+.card,
+.cardReverse {
+   width: 308px;
+   height: 227px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 18px;
+   padding: 10px;
+   background: #f8f8f8;
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: 20px 0px 25px -10px rgba(0, 0, 0, 0.1);
+   border-bottom: 7px solid #44d3dd;
+}
+.cardTextContainer {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+.cardTextContainer > p {
+   color: #414141;
+}
+
+.card > img,
+.cardReverse > img {
+   object-fit: cover;
+}
+@media screen and (max-width: 962px) {
+   .card,
+   .cardReverse {
+      width: 49%;
+   }
+}
+@media screen and (max-width: 642px) {
+   .card,
+   .cardReverse {
+      width: 100%;
+      height: 150px;
+   }
+   .cardTextContainer {
+      margin-left: 30px;
+      text-align: start;
+      gap: 20px;
+   }
+   .cardReverse {
+      flex-direction: row-reverse;
+   }
+   .card {
+      flex-direction: row;
+   }
+}
+@media screen and (max-width: 482px) {
+   .card,
+   .cardReverse {
+      flex-direction: column;
+      height: 227px;
+   }
+   .cardTextContainer {
+      margin-left: 0;
+      gap: 10px;
+      text-align: center;
+   }
+}

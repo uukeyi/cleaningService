@@ -1,0 +1,165 @@
+.homePageContainer {
+   position: relative;
+   left: 0;
+   top: 0;
+   padding: 216px 0px 387px 0px;
+}
+
+.background {
+   position: absolute;
+   left: 0;
+   top: 0;
+   background: url(https://thumb.tildacdn.com/tild3536-6232-4563-b063-396530363934/-/format/webp/photo.png)
+      no-repeat;
+   background-size: cover;
+   background-position: center center;
+   z-index: -1;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+.circleBgContainer {
+   position: relative;
+   width: 259px;
+   height: 259px;
+   top:-160px;
+   right: 360px;
+   border-radius: 100%;
+   background: rgba(255, 196, 0, 0.336);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+}
+.circleBgContainer > div {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   padding-top: 40px;
+   gap: 20px;
+   align-items: center;
+   width: 85%;
+   height: 85%;
+   background: rgba(255, 196, 0, 0.514);
+   border-radius: 100%;
+}
+.circleBgContainer > div > p:first-child {
+   color: white;
+   font-size: 20px;
+}
+.circleBgContainer > div > p:last-child {
+   font-size: 48px;
+   font-weight: 700;
+   color: white;
+}
+.backgroundSofa {
+   position: absolute;
+   height: 524px;
+   object-fit: cover;
+   max-width: 100%;
+   z-index: 2;
+}
+.whatWeUseContainer {
+   position: relative;
+   margin: 100px 0px 100px 0px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.cardContainer {
+   margin-top: 30px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 0px;
+}
+.cardContainer > img {
+   object-fit: cover;
+   height: 176px;
+   width: 20%;
+}
+.titleStrong {
+   align-items: flex-start;
+   font-weight: 300;
+   font-size: 30px;
+}
+.titleStrong > strong {
+   font-weight: 700;
+}
+
+@media screen and (max-width: 1200px) {
+   .cardContainer > img {
+      width: 182px;
+      height: 132px;
+   }
+}
+@media screen and (max-width : 962px) {
+    .circleBgContainer {
+      top : -190px;
+      width: 230px;
+      height: 230px;
+      left: 0;
+
+    }
+    .circleBgContainer  > div {
+      gap: 10px;
+    }
+    .circleBgContainer > div > p:last-child  {
+      font-size: 40px;
+    }
+    .backgroundSofa {
+      height: 450px;
+    }
+}
+@media screen and (max-width : 642px) {
+   .cardContainer > img {
+      width: 150px;
+      height: 107px;
+   }
+   .circleBgContainer {
+      top : -170px;
+      width: 200px;
+      height: 200px;
+      left: 0;
+    }
+   .backgroundSofa {
+      height: 400px;
+    }
+
+}
+@media screen and (max-width : 482px) { 
+   .cardContainer {
+      gap: 10px;
+   }
+   .titleStrong {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .cardContainer > img {
+      width: 140px;
+      height: 107px;
+   }
+   .homePageContainer {
+      padding-bottom: 270px;
+   }
+   .circleBgContainer > div > p:last-child  {
+      font-size: 35px;
+   }
+   .circleBgContainer > div {
+      gap: 2px;
+   }
+   .circleBgContainer {
+   
+      top : -80px;
+      width: 180px;
+      height: 180px;
+      left: 0;
+    }
+   .backgroundSofa {
+      height: 230px;
+    }
+}

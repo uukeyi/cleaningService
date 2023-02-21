@@ -1,0 +1,136 @@
+.mainContainer {
+   background: url(https://thumb.tildacdn.com/tild6565-3665-4166-a561-656162333363/-/format/webp/_10.png)
+      no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: 670px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.infoContainer {
+   padding: 40px;
+   border-radius: 30px;
+   width: 100%;
+   height: 461px;
+   background: #fff;
+   display: flex;
+   border-bottom: 15px solid     #a6eaf5;;
+}
+.bgImage {
+   position: absolute;
+   right: -100px;
+   bottom: 0px;
+   z-index: 2;
+}
+.textContainer {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.mainTitle {
+   font-size: 35px;
+   font-weight: 700;
+   line-height: 1.2;
+}
+.mainSubtitle {
+   line-height: 1.3;
+}
+.contentContainer {
+   position: relative;
+}
+.mainForm {
+   display: flex;
+   gap: 20px;
+}
+.mainForm > input {
+   padding: 20px;
+   width: 200px;
+   border-radius: 30px;
+   border: 2px solid #0ac2b7;
+}
+.mainForm > button {
+   padding: 20px;
+   width: 200px;
+   border-radius: 30px;
+   color: #fff;
+   background: #0ac2b7;
+}
+.errorPlaceholder::placeholder {
+   color: red;
+}
+.confidentialityText {
+   font-size: 11px;
+}
+@media screen and (max-width: 1200px) {
+   .mainContainer {
+      overflow: hidden;
+   }
+   .bgImage {
+      height: 517px;
+      width: 490px;
+   }
+}
+@media screen and (max-width: 962px) {
+   .mainTitle {
+      font-size: 30px;
+   }
+   .bgImage {
+      height: 417px;
+      width: 390px;
+      right: -200px;
+      z-index: 0;
+   }
+   .mainForm > button {
+      width: 160px;
+   }
+   .mainForm > input {
+      width: 160px;
+   }
+   .mainForm {
+      position: relative;
+      z-index: 2;
+      gap: 10px;
+   }
+   .confidentialityText {
+      position: relative;
+      z-index: 2;
+      font-size: 10px;
+   }
+}
+@media screen and (max-width: 642px) {
+   .infoContainer {
+      height: auto;
+      padding: 30px;
+   }
+   .mainForm {
+      flex-direction: column;
+   }
+   .mainForm > input {
+      width: 80%;
+   }
+   .mainForm > button {
+      width: 80%;
+   }
+}
+@media screen and (max-width: 480px) {
+   .mainForm > input {
+      width: 100%;
+   }
+   .infoContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   .mainForm > button {
+      width: 100%;
+   }
+   .bgImage {
+      display: none;
+   }
+   .contentContainer {
+      width: 100%;
+   }
+}

@@ -1,0 +1,74 @@
+.mainContainer {
+   padding: 156px 0px 60px 0px;
+}
+.blueCard {
+   height: 115px;
+}
+.cardContainer {
+   padding: 40px 0px;
+}
+.container {
+   border-bottom: 1px solid grey;
+   padding-bottom: 70px;
+}
+.cardContainer > p {
+   font-size: 19px;
+}
+.flexContainer {
+   margin-top: 40px;
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+}
+.mainTitle {
+   font-size: 25px;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+.mainCard {
+   max-width: 45%;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   gap: 15px;
+   z-index: 2;
+}
+.mainCard > div {
+   position: absolute;
+   width: 60px;
+   height: 60px;
+   z-index: -1;
+   top: -25px;
+   left: -25px;
+   border-radius: 100%;
+   background: #b2e4f0;
+}
+.cardTitle {
+   font-size: 20px;
+}
+.cardDesc {
+   color: rgba(0, 0, 0, 0.637);
+   line-height: 1.3;
+}
+.priceBg {
+   position: relative;
+   top: -30px;
+   width: 492px !important;
+   height: 520px !important;
+}
+
+@media screen and (max-width: 962px) {
+   .flexContainer {
+      flex-direction: column;
+      align-items: center;
+   }
+   .mainCard {
+      max-width: none;
+      width: 90%;
+   }
+}
+@media screen and (max-width: 642px) {
+   .priceBg {
+      display: none;
+   }
+}

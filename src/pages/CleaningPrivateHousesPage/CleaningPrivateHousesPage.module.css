@@ -1,0 +1,48 @@
+.mainContainer {
+   padding: 200px 0px 100px 0px;
+}
+.mainTitle,
+.inclusiveTitle {
+   font-weight: 700;
+   font-size: 35px;
+}
+.mainBtn {
+   width: 230px;
+   padding: 20px;
+   background: #0ac2b7;
+   border-radius: 30px;
+   color: #fff;
+   font-weight: 700;
+}
+.mainTextContainer {
+   display: flex;
+   gap: 70px;
+   flex-direction: column;
+   align-items: center;
+}
+.infoBlockContainer {
+   margin-top: 70px;
+}
+.inclusiveBlockContainer {
+   margin-top: 120px;
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+
+}
+.inclusiveTitle {
+    text-align: center;
+}
+
+ @media screen and (max-width: 642px) {
+   
+    .hiddenContainer {
+     width: 100% !important;
+    }
+ }
+ @media screen and (max-width: 480px) {
+.mainTextContainer {
+    text-align: center;
+}
+ }
+ 

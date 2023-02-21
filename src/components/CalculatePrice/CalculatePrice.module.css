@@ -1,0 +1,223 @@
+.container {
+   position: relative;
+   margin-top: 100px;
+}
+.contentContainer {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   padding: 87px 310px 50px 310px;
+}
+.contentContainer > img {
+   width: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: -1;
+}
+.textContainer {
+   position: relative;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.textContainer > p {
+   display: flex;
+   align-items: center;
+   white-space: nowrap;
+   font-weight: 600;
+   font-size: 30px;
+   color: #414141;
+}
+.textContainer > p:last-child {
+   display: flex;
+   align-items: center;
+   font-weight: 300;
+}
+.textContainer > p:last-child > img {
+   height: 60px;
+   width: 60px;
+}
+.bgNote,
+.bgPen {
+   position: absolute;
+}
+.bgPen {
+   width: 151px;
+   height: 149px;
+   top: -50px;
+   right: -140px;
+   z-index: 2;
+}
+.bgNote {
+   position: absolute;
+   right: -280px;
+   top: -40px;
+   width: 260px;
+   height: 315px;
+}
+.contentContainer > p {
+   line-height: 1.5;
+   color: #4d6b72;
+   font-weight: 400;
+   text-align: center;
+}
+.blueBtn {
+   min-width: 451px;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 3px;
+   height: 110px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+}
+.container {
+   overflow: hidden;
+}
+.cardContainer > div {
+   background: url(https://static.tildacdn.com/tild3966-3339-4333-b035-346363303337/5ea6d48a-7106-437f-9.svg)
+      no-repeat;
+   background-size: cover;
+   background-position: center center;
+   width: 256px;
+   height: 183px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   justify-content: space-around;
+   text-align: center;
+}
+.cardContainer > div > img {
+   background-size: cover;
+}
+.cardContainer > div > p {
+   color: #4d6b72;
+}
+.cardContainer {
+   margin-top: 20px;
+   display: flex;
+   gap: 35px;
+}
+@media screen and (max-width: 1200px) {
+   .contentContainer {
+      position: static;
+   }
+   .contentContainer > img {
+      display: none;
+   }
+   .container {
+      margin-top: 100px !important;
+      background: url(https://static.tildacdn.com/tild6464-3333-4133-b732-303965346266/55f044f2-7546-439a-8.svg);
+      background-size: cover;
+      background-position: center center;
+      margin: 0;
+   }
+   .contentContainer {
+      padding: 187px 200px 127px 200px;
+   }
+}
+@media screen and (max-width: 962px) {
+   .container {
+      margin: 0;
+   }
+   .contentContainer {
+      gap: 10px;
+      padding: 180px 0px 107px 0px;
+   }
+   .cardContainer {
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+   }
+
+   .textContainer {
+      justify-content: center;
+   }
+   .bgNote {
+      top: 40px;
+      right: -160px;
+      width: 219px;
+      height: 264px;
+   }
+   .bgPen {
+      top: 30px;
+      right: -70px;
+      transform: rotate(-15deg);
+      width: 129px;
+      height: 128px;
+   }
+   .textContainer > p {
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+   }
+   .textContainer > p > img {
+      width: 40px;
+      height: 40px;
+   }
+}
+@media screen and (max-width: 642px) {
+   .bgNote {
+      z-index: 0;
+      width: 160px;
+      height: 160px;
+      top: 200px;
+      right: -100px;
+   }
+   .contentContainer > img {
+      top: 45%;
+      min-width: 280%;
+   }
+   .cardContainer > div {
+      width: 218px;
+      height: 156px;
+   }
+   .bgPen {
+      top: 210px;
+      right: -20px;
+      width: 70px;
+      height: 70px;
+   }
+}
+@media screen and (max-width: 480px) {
+   .contentContainer {
+      padding: 150px 0px 107px 0px;
+   }
+   .cardContainer {
+      flex-wrap: nowrap;
+      flex-direction: column;
+   }
+   .contentContainer > img {
+      top: 35%;
+      min-width: 420%;
+   }
+
+   .bgNote {
+      z-index: 0;
+      width: 170px;
+      height: 180px;
+      top: -158px;
+      right: -110px;
+   }
+
+   .bgPen {
+      top: -140px;
+      right: -20px;
+      width: 70px;
+      height: 70px;
+   }
+   .textContainer > p {
+      font-size: 17px;
+   }
+   .blueBtn {
+      min-width: 100% !important;
+      background-size: contain;
+   }
+}

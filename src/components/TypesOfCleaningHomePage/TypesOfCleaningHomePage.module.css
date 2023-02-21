@@ -1,0 +1,51 @@
+.typesOfCleaningBlockCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.cardContainerDesc {
+    position: relative;
+    top: -110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.typesOfCleaningBlockText {
+    display: flex;
+
+    gap: 30px;
+    align-items: center;
+}
+.typesOfCleaningBlockText > p:first-child {
+    font-size: 150px !important;
+    font-weight: 800;
+    color: #36B6BE;
+}
+.typesOfCleaningBlockText > p:last-child {
+    
+    font-size: 30px;
+}
+.typesOfCleaningBlockText > p:last-child > span:last-child {
+    font-weight: 300;
+}
+.typesOfCleaningBlockText > p:last-child > span:first-child {
+    font-weight: 700;
+}
+@media screen and (max-width : 962px) {
+
+.cardContainerDesc {
+    flex-wrap: wrap;
+}
+
+}
+@media screen and (max-width : 642px) { 
+ .cardContainerDesc {
+    top: -40px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+ }   
+ .typesOfCleaningBlockText {
+    margin-top: 100px;
+ }
+}

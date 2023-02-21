@@ -1,0 +1,190 @@
+.mainContainer {
+   padding: 156px 0px 60px 0px;
+}
+.mainCard {
+   width: 49%;
+   padding: 20px;
+   box-shadow: 0 0 10px 1px rgb(240 239 239);
+   cursor: default;
+   pointer-events: none;
+}
+.mainCard > img {
+   width: 100px;
+   height: 100px;
+}
+.mainCard > p {
+   max-width: 70%;
+   font-size: 19px;
+   font-weight: 700;
+}
+.mainTitle {
+   margin-top: 70px;
+   font-weight: 300;
+   font-size: 35px;
+}
+.mainTitle > strong {
+   font-weight: 700;
+}
+
+.blueBlock {
+   width: 100%;
+   height: 300px;
+   background: url(https://static.tildacdn.com/tild6264-3664-4462-b136-383736663638/de921f14f423afbefb15.svg)
+      no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+.textContainer {
+   padding: 70px 0px;
+   display: flex;
+   justify-content: space-around;
+}
+.textContainer > p {
+   color: #fff;
+   font-size: 24px;
+   max-width: 30%;
+}
+.textContainer > ul {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.textContainer > ul > li {
+   font-size: 26px;
+   color: #fff;
+   list-style-type: disc;
+}
+.bgCircle {
+   position: absolute;
+   top: 0;
+   right: 0;
+   opacity: 0.6;
+   pointer-events: none;
+   z-index: 0;
+}
+.bgImage {
+   height: 700px !important;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.alertCircle {
+    width: 100px !important;
+    height: 80px !important;
+}
+.mainBlueBtn {
+    margin-top: 40px;
+    position: relative;
+    color: #fff;
+    width: 350px;
+    padding: 30px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    background: #4dc5d7;
+ }
+ 
+ .mainBlueBtn > img {
+    position: absolute;
+    pointer-events: none;
+    right: -40px;
+    top: -10px;
+ }
+ .btnContainer {
+    display: flex;
+    justify-content: center;
+ }
+@media screen and (max-width: 1200px) {
+   .mainCard {
+      width: 48%;
+   }
+   .alertCircle {
+    width: 120px !important;
+   }
+}
+@media screen and (max-width: 962px) {
+    .alertCircle {
+        width: 140px !important;
+    }
+    .textContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .textContainer > p {
+        max-width: none;
+    }
+    .textContainer > ul > li {
+        font-size: 23px;
+    }
+   .mainCard {
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 642px) {
+    .alertCircle {
+        width: 190px !important;
+    }
+     }
+@media screen and (max-width: 480px) {
+    .btnContainer {
+        overflow: hidden;
+    }
+    .mainBlueBtn {
+        width: 280px;
+    }
+    .mainBlueBtn > img {
+        width: 100px;
+        right: -50px;
+        height: 80px;
+    }
+ 
+    .textContainer > p {
+        font-size: 17px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+    .textContainer > ul {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .textContainer > ul > li {
+        font-size: 18px;
+        list-style-type: none;
+    }
+   .fullWidthContainer {
+      width: 90%;
+   }
+   .mainList {
+      justify-content: center;
+      align-items: center;
+   }
+   .mainCard > p {
+      max-width: 70%;
+      font-size: 16px;
+      z-index: 2;
+   }
+   .mainCard {
+      width: 90%;
+      padding: 0px;
+      padding-right: 20px;
+   }
+   .mainCard > img {
+      margin-left: -30px;
+   }
+   .mainContainer {
+      padding: 70px 0px 60px 0px;
+   }
+   .mainTitle {
+      font-size: 30px;
+   }
+   .alertCircle {
+    width: 200px !important;
+    height: 60px !important;
+   }
+}

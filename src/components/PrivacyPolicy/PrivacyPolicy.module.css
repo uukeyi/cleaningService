@@ -1,0 +1,22 @@
+.popup {
+   max-height: none;
+   max-height: 90%;
+   overflow-y: scroll;
+
+   padding: 40px;
+   background: #fbfbf9;
+}
+
+.textContainer > p {
+   font-size: 15px;
+   line-height: 1.5;
+}
+.textContainer > p {
+   color: rgba(0, 0, 0, 0.603);
+}
+@media screen and (max-width: 962px) {
+   .popup {
+      max-width: none;
+      width: 80%;
+   }
+}

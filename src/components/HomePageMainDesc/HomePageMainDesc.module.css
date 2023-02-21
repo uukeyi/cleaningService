@@ -1,0 +1,114 @@
+.infoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ .homePageTitle {
+    text-align: center;
+    font-size: 48px;
+    color:#36B6BE ;
+    font-weight: 700;
+ }
+ .homePageDescContainer {
+    margin-top: 36px;
+    display: flex;
+    gap: 96px;
+ }
+ .homePageDescContainer > p {
+    text-align: center;
+ }
+ .homePageDescContainer > p > span {
+    font-size: 18px;
+ }
+ .homePageDescContainer > p > span:first-child {
+    font-weight: 600;
+ }
+ .homePageDescContainer > p > span:last-child {
+    color: #414141;
+ }
+ .homePageBlueButtonContainer > img {
+    position: absolute;
+    right: -50px;
+    top: -10px;
+ }
+ .homePageBlueButtonContainer {
+    position: relative;
+    margin-top: 30px;
+    width: 468px;
+    background: rgba(255, 255, 255, 0.288);
+    padding: 0px;
+    border-radius: 81px;
+ }
+ .blueButton {
+    font-size : 24px;
+    line-height : 24px;
+    letter-spacing : 3px;
+    padding: 50px 83px 52px 83px;
+    width: 100%;
+ }
+ @media screen and (max-width : 962px) {
+    .homePageTitle {
+        font-size: 40px;
+    }
+    .infoContainer {
+        padding-bottom: 60px;
+    }
+    .homePageDescContainer {
+        gap: 40px;
+    }
+ }
+ @media screen and (max-width : 642px) {
+    .homePageTitle {
+        font-size: 35px;
+    }
+    .homePageBlueButtonContainer {
+        width: 380px;
+        padding: 10px;
+    }
+    .blueButton {
+        background-size: cover;
+        padding: 20px 35px 20px 35px;
+    }
+    .homePageBlueButtonContainer > img  {
+        width: 120px;
+        height: 120px;
+    } 
+    .infoContainer { 
+        padding-bottom: 0px;
+    }
+ }
+ @media screen and (max-width : 482px) { 
+    br {
+        display: none;
+    }
+    .infoContainer {
+        padding: 0;
+    }
+
+    .homePageDescContainer {
+        gap: 30px;
+
+    }
+    .homePageBlueButtonContainer {
+        margin-top: 40px;
+        width: 100%;
+        padding: 6px;
+    }
+    .blueButton {
+        background-size: cover;
+        border-radius: 81px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 1;
+        padding: 21.7px 28px
+    }
+    .homePageBlueButtonContainer > img  {
+        top: -25px;
+        transform: rotate(-10deg);
+        right: -8px;
+        width: 60px;
+        height: 60px;
+    } 
+ }

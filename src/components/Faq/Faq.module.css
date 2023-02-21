@@ -1,0 +1,169 @@
+.titleContainer > p {
+   font-weight: 300;
+   font-size: 30px;
+}
+.titleContainer > p > strong {
+   font-weight: 700;
+}
+.accordionContainer {
+   margin-top: 120px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px;
+}
+.container {
+   position: relative;
+   padding-top: 60px;
+   z-index: 1;
+
+   padding-bottom: 75px;
+   background-color: #c8e8eb;
+}
+.cardAccordion {
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   cursor: pointer;
+   padding: 20px;
+   border-bottom: 2px solid #fff;
+   border-top: 2px solid #fff;
+   align-items: center;
+}
+
+.contentContainer > div {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 100%;
+   transition: 0.6s;
+   background: #fff;
+}
+.contentContainer > p {
+   font-size: 20px;
+   font-weight: 700;
+}
+.bgCircle {
+   position: absolute;
+   pointer-events: none;
+   top: 0;
+   left: 0;
+}
+.contentContainer {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.cardAccordion > * {
+   pointer-events: none;
+}
+.cardAccordion:hover div > div {
+   background: #36b6be;
+}
+.contentContainer > div > img {
+   transition: 600ms;
+   width: 30px;
+   height: 30px;
+}
+.accordionDesc > p {
+   max-height: 0;
+   overflow: hidden;
+   opacity: 0;
+   transition: all 500ms ease-in-out;
+}
+.accordionDesc {
+   transition: all 600ms ease-in-out;
+}
+.accordionDesc,
+.accordionDescActive {
+   line-height: 1.4;
+   opacity: 0.8;
+   width: 100%;
+}
+.accordionDescActive > p {
+   max-height: auto;
+   margin-top: 20px;
+   transition: all 600ms ease-in-out;
+   overflow: visible;
+}
+.reverseIcon {
+   transition: 400ms;
+   transform: rotate(-45deg);
+}
+.bgCircleRight {
+   position: absolute;
+   right: 0;
+   top: 40%;
+   pointer-events: none;
+   z-index: -1;
+   opacity: 0.3;
+}
+@media screen and (max-width: 1200px) {
+   .accordionContainer {
+      margin-top: 80px;
+   }
+   .cardAccordion {
+      width: 100%;
+   }
+   .bgCircle {
+      width: 150px;
+      height: 150px;
+      z-index: -1;
+   }
+}
+@media screen and (max-width: 962px) {
+   .accordionContainer {
+      margin-top: 60px;
+   }
+   .bgCircle {
+      left: -50px;
+      width: 200px;
+      height: 200px;
+      opacity: 0.5;
+   }
+}
+@media screen and (max-width: 642px) {
+   .cardAccordion {
+      padding: 10px;
+   }
+   .bgCircle {
+      left: 0;
+   }
+   .contentContainer > div {
+      max-width: 30px;
+      max-height: 30px;
+   }
+   .contentContainer > div > img {
+      width: 20px;
+      height: 20px;
+   }
+   .contentContainer > p {
+      font-size: 16px;
+   }
+}
+@media screen and (max-width: 480px) {
+   .accordionContainer {
+      margin-top: 30px;
+   }
+
+   .fullWidthContainer {
+      padding: 10px;
+   }
+   .contentContainer {
+      gap: 8px;
+   }
+   .accordionDesc,
+   .accordionDescActive {
+      font-size: 13px;
+   }
+   .contentContainer > p {
+      font-size: 14px;
+   }
+   .fullWidthContainer {
+      width: 100%;
+   }
+}

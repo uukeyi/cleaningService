@@ -1,0 +1,227 @@
+.mainContainer {
+   padding: 200px 0px 250px 0px;
+   position: relative;
+}
+.mainTitle {
+   font-weight: 700;
+   font-size: 38px;
+   color: #1a3338;
+}
+.mainTitle > span {
+   font-weight: 700;
+   color: rgb(20, 173, 180);
+}
+.mainBlueBtn {
+   margin-top: 40px;
+   position: relative;
+   color: #fff;
+   width: 350px;
+   padding: 30px;
+   font-size: 20px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   border-radius: 35px;
+   background: #4dc5d7;
+}
+
+.mainBlueBtn > img {
+   position: absolute;
+   pointer-events: none;
+   right: -40px;
+   top: -10px;
+}
+.mainBg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   height: 100%;
+   pointer-events: none;
+}
+
+.container {
+   position: relative;
+}
+
+.mainBgWomen,
+.mainBgBubbles {
+   position: absolute;
+   z-index: 1;
+   top: -120px;
+   right: 0;
+   max-width: 405px;
+   object-position: top;
+   max-width: 400px;
+   pointer-events: none;
+
+}
+.mainBgSale {
+   position: absolute;
+   top: -100px;
+   right: 400px;
+   pointer-events: none;
+
+}
+.bgBubbles {
+   position:absolute;
+   left: 0;
+   top: 20%;
+   pointer-events: none;
+   z-index: -1;
+}
+.mainBgBubbles {
+   top: 100px;
+   right: 160px;
+   z-index: 0;
+}
+.mainSubtitleContainer {
+   margin-top: 30px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+.mainSubtitleContainer > img {
+   max-height: 40px;
+   max-width: 40px;
+}
+.mainSubtitle > strong {
+   font-weight: 700;
+}
+.hiddenSubtitle {
+   display: none;
+}
+
+.mainSevicesContainer {
+    position: relative;
+    z-index: 3;
+    background-color: red;
+}
+@media screen and (max-width: 1200px) {
+   .mainBgSale {
+      right: 250px;
+   }
+}
+@media screen and (max-width: 962px) {
+   .mainTitle {
+      display: flex;
+      flex-direction: column;
+      font-size: 30px;
+   }
+   .mainBgSale {
+      width: 100px;
+      height: 100px;
+      top: 65px;
+      right: 190px;
+      z-index: 1;
+   }
+   .mainBlueBtn {
+      width: 300px;
+   }
+   .mainBlueBtn > img {
+      width: 100px;
+      height: 80px;
+   }
+   .mainBgWomen {
+      right: -100px;
+   }
+   .mainContainer {
+      overflow: hidden;
+   }
+   .mainBgBubbles {
+      display: none;
+   }
+}
+@media screen and (max-width: 642px) {
+   .mainBlueBtn {
+      width: 270px;
+      padding: 20px;
+      font-size: 18px;
+   }
+   .mainBlueBtn > img {
+      width: 80px;
+      height: 60px;
+   }
+   .mainTitle {
+      font-size: 28px;
+   }
+   .mainBgWomen {
+      width: 355px;
+      height: 540px;
+      top: 0px;
+      right: -120px;
+   }
+   .mainBgSale {
+      width: 90px;
+      height: 90px;
+      top: 20px;
+      right: 110px;
+   }
+   .mainTitle {
+      gap: 10px;
+   }
+   .mainTitleSubtitle {
+      display: flex;
+      flex-direction: column;
+   }
+}
+@media screen and (max-width: 480px) {
+   .mainTitle,
+   .mainBlueBtn,
+   .mainSubtitle {
+      position: relative;
+      z-index: 1;
+   }
+   .mainContainer {
+      padding: 170px 0px 250px 0px;
+   }
+   .mainTitle {
+      gap: 5px;
+      font-size: 25px;
+   }
+   .mainBgSale {
+      width: 80px;
+      height: 80px;
+      top: 170px;
+      right: 30px;
+      z-index: 0;
+   }
+   .mainBlueBtn > img {
+      top: 7px;
+      right: -30px;
+   }
+   .mainBlueBtn {
+      margin-top: 50px;
+      width: 100%;
+      padding: 30px;
+   }
+   .mainBgWomen {
+      width: 310px;
+      height: 470px;
+      opacity: 0.8;
+      top: -80px;
+      right: -160px;
+      z-index: 0;
+   }
+   .mainSubtitleContainer {
+      display: none;
+   }
+   .hiddenSubtitle {
+      font-style: italic;
+      display: flex;
+   }
+   .hiddenSubtitle > p > strong {
+      font-weight: 700;
+   }
+   .mainBg {
+      object-fit: none;
+   }
+   .hiddenSubtitle > p {
+      display: flex;
+      flex-direction: column;
+   }
+   .bgBubbles {
+      opacity: 0.6;
+   }
+}

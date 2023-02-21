@@ -1,0 +1,87 @@
+.popupOrder {
+   text-align: center;
+   padding: 40px;
+}
+.popupOrder > p {
+   font-size: 14px;
+}
+.popupOrderTextContainer {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.popupOrderTextContainer > p:first-child {
+   font-size: 30px;
+   font-weight: 600;
+}
+.popupOrderTextContainer > p:last-child {
+   font-size: 16px;
+   font-weight: 300;
+}
+.popupOrderForm {
+   margin-top: 30px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+}
+.popupOrderForm > button,
+.popupOrderForm > input,
+.telInput {
+   width: 90%;
+   padding: 20px;
+   border-radius: 30px;
+}
+
+.popupOrderForm > input,
+.telInput {
+   border: 2px solid #46dee9;
+}
+.popupOrderForm > button {
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 16px;
+   background: #22b4be;
+}
+
+@media screen and (max-width: 1200px) {
+   .popupOrder {
+      padding: 15px;
+   }
+   .popupOrderForm {
+      gap: 19px;
+   }
+}
+@media screen and (max-width: 962px) {
+   .popupOrder {
+      width: 500px;
+   }
+}
+@media screen and (max-width: 642px) {
+   .popupOrder {
+      width: 90%;
+      padding: 30px;
+   }
+   .textPrivate {
+      font-size: 13px !important;
+   }
+}
+@media screen and (max-width: 480px) {
+   .popupOrderForm > button,
+   .popupOrderForm > input {
+      width: 100%;
+   }
+}
+@media screen and (max-width: 340px) {
+    .popupOrderTextContainer > p:first-child {
+        font-size: 20px;
+    }
+    .popupOrderTextContainer > p:last-child  {
+        font-size: 14px;
+    }
+   .popupOrder > svg {
+      opacity: 0;
+      pointer-events: none;
+   }
+}

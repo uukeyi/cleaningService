@@ -1,0 +1,29 @@
+.mainContainer {
+    padding: 156px 0px 60px 0px;
+ }
+
+
+ .container {
+    border-bottom: 1px solid grey;
+    padding-bottom: 70px;
+ }
+
+
+
+ 
+ 
+
+ .priceBg {
+    position: relative;
+    top: -30px;
+    width: 492px !important;
+    height: 520px !important;
+ }
+ 
+
+ @media screen and (max-width: 642px) {
+    .priceBg {
+       display: none;
+    }
+ }
+ 

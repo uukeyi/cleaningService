@@ -1,0 +1,56 @@
+.mainContainer {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    gap: 22px;
+}
+.mainCard {
+    display: flex;
+    border-radius: 10px;
+    width: 32%;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+    border : 1px solid black;
+   z-index: 2;
+}
+.mainCard  > img {
+    width: 73px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.mainCard > p{
+    text-align: end;
+}
+.bgSpot {
+    position: absolute;
+    pointer-events: none;
+    left: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+.mainCard {
+    width: 31%;
+}
+ }
+ @media screen and (max-width: 962px) {
+   .mainCard {
+    width: 48%;
+   }
+ }
+ @media screen and (max-width: 642px) {
+  .mainCard {
+    width: 100%;
+  }
+ }
+ @media screen and (max-width: 480px) {
+
+ }
+ 

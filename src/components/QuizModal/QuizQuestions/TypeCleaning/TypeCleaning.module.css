@@ -1,0 +1,132 @@
+.mainContainer {
+   padding: 20px 20px 30px 20px;
+}
+.mainTitle {
+   font-size: 28px;
+   font-weight: 300;
+}
+.formContainer {
+   width: 70%;
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.formGroup {
+   width: 80%;
+   /* padding: 18px 0px; */
+   height: 50px;
+   border: 1px solid #c7f7ff;
+   position: relative;
+}
+.contentContainer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.womenImg {
+   max-height: 250px;
+   border-radius: 20px;
+   max-width: 300px;
+   object-fit: cover;
+}
+:root {
+   --primary-color: rgb(177, 39, 108);
+}
+
+input[type="radio"] {
+   display: none;
+}
+
+label {
+   display: flex;
+   position: absolute;
+   max-width: none;
+   max-height: none;
+   height: 100%;
+   width: 100%;
+align-items: center;
+   margin-left: 50px;
+   cursor: pointer;
+   position: relative;
+   font-size: 17px;
+   font-weight: 300;
+}
+
+label::before {
+   content: "";
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   background-color: transparent;
+   border: 2px solid #adf3ff;
+   border-radius: 50%;
+   top: 50%;
+   left: -2rem;
+   transform: translateY(-50%);
+   transition: border-color 400ms ease;
+}
+
+label::after {
+   content: "";
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   background-color: var(--primary-color);
+   border: 2px solid var(--primary-color);
+   border-radius: 50%;
+   top: 50%;
+   left: -2rem;
+   transform: translateY(-50%) scale(0);
+   transition: transform 400ms ease;
+}
+
+input[type="radio"]:checked + label::before {
+   border-color: var(--primary-color);
+}
+
+input[type="radio"]:checked + label::after {
+   transform: translateY(-50%) scale(0.55);
+}
+
+@media screen and (max-width: 1200px) {
+   .formContainer {
+      width: 100%;
+   }
+   .formGroup {
+      width: 100%;
+   }
+ .womenImg {
+   display: none;
+ }
+
+}
+@media screen and (max-width: 962px) {
+   .mainTitle {
+      text-align: center;
+   }
+   .mainContainer {
+      padding-left: 0px;
+   }
+   .formContainer {
+      width: 90%;
+   }
+   .contentContainer {
+      flex-direction: column;
+      align-items: center;
+   }
+   .womenImg {
+      max-width: none;
+      width: 50%;
+      margin-top: 50px;
+      max-height: none;
+      object-fit: cover;
+      display: flex;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .womenImg {
+      width: 70%;
+   }
+}

@@ -1,0 +1,102 @@
+.mainContainer {
+   padding: 200px 0px 100px 0px;
+}
+.textContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+   justify-content: center;
+}
+.mainTitle {
+   font-size: 35px;
+   font-weight: 700;
+}
+.mainSubtitle {
+   font-size: 20px;
+   font-weight: 300;
+}
+.cardContainer {
+   margin-top: 90px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 22px;
+}
+.mainCard {
+   width: 32%;
+   max-height: 356px;
+}
+.cardTextContainer > img {
+   width: 100%;
+   max-height: 200px;
+   object-fit: cover;
+}
+.cardTextContainer > p {
+   margin-top: 20px;
+   font-weight: 700;
+   font-size: 18px;
+   white-space: nowrap;
+}
+.cardActionContainer {
+   margin-top: 15px;
+   display: flex;
+   gap: 15px;
+}
+.blackBtn,
+.blueBtn {
+   width: 120px;
+   padding: 15px;
+   border-radius: 30px;
+   font-size: 14px;
+   color: #fff;
+   transition: 0.5s;
+   border: 1px solid transparent;
+}
+.blackBtn {
+   background: black;
+}
+.blueBtn {
+   background: #0ac2b7;
+}
+.blackBtn:hover,
+.blueBtn:hover {
+   background-color: #fff;
+   color: black;
+   transition: 0.5s;
+   border: 1px solid black;
+}
+.mainDescContainer {
+    margin-top: 70px;
+}
+.mainDescContainer > p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 1200px) {
+   .mainCard {
+      width: 31%;
+   }
+   .cardTextContainer > p {
+      font-size: 16px;
+   }
+   .blackBtn,
+   .blueBtn {
+      width: 110px;
+      padding: 13px;
+   }
+}
+@media screen and (max-width: 962px) {
+   .mainCard {
+      width: 48%;
+   }
+}
+@media screen and (max-width: 642px) {
+   .textContainer {
+      text-align: center;
+   }
+   .mainCard {
+      width: 100%;
+   }
+}

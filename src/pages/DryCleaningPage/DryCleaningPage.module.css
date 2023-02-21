@@ -1,0 +1,85 @@
+.mainContainer {
+   padding: 200px 0px 100px 0px;
+}
+.textContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+.mainTitle {
+   font-size: 45px;
+   font-weight: 700;
+}
+.mainSubtitle {
+   font-size: 17px;
+   font-weight: 300;
+}
+.contentContainer {
+   margin-top: 60px;
+   display: flex;
+   gap: 20px;
+}
+.mainCard > div {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+}
+
+.mainCard > div > p {
+   font-size: 18px;
+   font-weight: 700;
+}
+.mainBtn {
+   width: 230px;
+   padding: 20px;
+   background: #0ac2b7;
+   border-radius: 30px;
+   color: #fff;
+   font-weight: 700;
+   transition: 0.5s;
+}
+
+.servicesContainer {
+   margin-top: 100px;
+}
+.mainBtn:hover {
+   background: black;
+   transition: 0.5s;
+}
+.mainBtnContainer {
+   margin-top: 40px;
+   display: flex;
+   justify-content: center;
+}
+.servicesContainer {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+@media screen and (max-width: 962px) {
+   .contentContainer {
+      flex-wrap: wrap;
+   }
+   .mainCard {
+      width: 48%;
+   }
+}
+@media screen and (max-width: 642px) {
+   .contentContainer {
+      flex-wrap: wrap;
+   }
+   .mainCard {
+      width: 100%;
+   }
+}
+@media screen and (max-width: 480px) {
+   .mainSubtitle {
+      text-align: center;
+   }
+   .hiddenContainer {
+      width: 95% !important;
+   }
+}

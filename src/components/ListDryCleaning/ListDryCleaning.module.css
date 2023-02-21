@@ -1,0 +1,39 @@
+.mainTitle {
+   display: flex;
+   padding: 10px 30px;
+   justify-content: space-between;
+}
+.mainTitle > span {
+   font-size: 23px;
+   font-weight: 700;
+}
+.mainList > li {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 30px;
+}
+.mainTitle {
+   padding-bottom: 10px;
+   border-bottom: 2px solid rgb(189, 189, 189);
+}
+
+
+@media screen and (max-width: 642px) {
+   .mainList > li {
+      gap: 20px;
+      padding: 30px 10px;
+      font-size: 15px;
+   }
+   .mainList > li > span:last-child {
+    text-align: right;
+ }
+}
+@media screen and (max-width: 480px) {
+   .mainList > li {
+      padding: 30px;
+   }
+   .mainTitle > span {
+      font-size: 19px;
+   }
+}

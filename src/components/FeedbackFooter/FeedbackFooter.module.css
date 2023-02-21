@@ -1,0 +1,132 @@
+.mainContainer {
+   padding: 200px 0px;
+}
+.container {
+   display: flex;
+   gap: 50px;
+   margin-top: 160px;
+}
+.socialLinksContainer {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.textContainer {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   flex-direction: column;
+   justify-content: center;
+}
+.btnContainer {
+   display: flex;
+   position: relative;
+}
+.btnContainer  > img {
+   position: absolute;
+   right: -20px;
+   top: 20px;
+}
+
+.mainBlueBtn{
+   font-size : 24px;
+    line-height : 24px;
+    letter-spacing : 3px;
+    padding: 50px 83px 52px 83px;
+    width: 100%;
+}
+
+.socialLinksContainer > p:last-child {
+   font-weight: 300;
+}
+.mainTitle > strong {
+   font-weight: 700;
+}
+.mainTitle {
+   font-size: 35px;
+}
+.mainTitle {
+   font-weight: 300;
+}
+.vkLink {
+   display: block;
+   width: 90px;
+   height: 90px;
+   border-radius: 100%;
+   padding: 10px;
+   margin-left: 20px;
+   border: 1px solid #3b89ff;
+}
+.feedbackContainer > div {
+   margin-top: 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+.iconContainer {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+.iconContainer > img {
+   width: 50px;
+   height: 50px;
+}
+.iconContainer > a {
+   font-size: 20px;
+   font-weight: 350;
+}
+.textContainer {
+   padding: 0px 15px;
+}
+
+@media screen and (max-width: 1200px) {
+   .mainTitle {
+      font-size: 30px;
+   }
+}
+@media screen and (max-width: 962px) {
+   .container {
+      gap: 50px;
+      align-items: center;
+      flex-direction: column;
+   }
+   .feedbackContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+   .socialLinksContainer {
+      text-align: center;
+   }
+   .socialLinksContainer > div {
+      display: flex;
+      justify-content: center;
+   }
+}
+@media screen and (max-width: 642px) {
+   .mainBlueBtn {
+      background-size: cover;
+      padding: 28px 35px 28px 35px;
+   }
+   .btnContainer  > img {
+      top : 10px;
+      width: 65px;
+      height: 65px;
+   }
+}
+@media screen and (max-width: 480px) {
+   .btnContainer  > img  {
+      width: 55px;
+      height: 55px;
+   }
+   .mainBlueBtn {
+      background-size: cover;
+      border-radius: 81px;
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 1;
+      padding: 21.7px 28px
+   }
+}
